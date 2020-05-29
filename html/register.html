@@ -4,11 +4,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>注册</title>
+    <link rel="stylesheet" href="../css/style.css" />
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
     <style>
         *{
             margin: 0;
             padding: 0;
         }
+        ::-webkit-input-placeholder { /* Chrome/Opera/Safari */ 
+			color:rgba(255,255,255,0.6);
+		}
+		::-moz-placeholder { /* Firefox 19+ */  
+			color:rgba(255,255,255,0.6);
+		}
+		:-ms-input-placeholder { /* IE 10+ */ 
+            color:rgba(255,255,255,0.6);
+		}
+		:-moz-placeholder { /* Firefox 18- */ 
+            color:rgba(255,255,255,0.6);
+		}
         body{
             background: url(../img/background.png) no-repeat; 
             background-size:100% 100%; 
@@ -50,8 +64,8 @@
         .input-div input{
             width: 100%;
             margin-top: -5px;
-            margin-bottom: 15px;
-            height: 40px;
+            margin-bottom: 10px;
+            height: 45px;
             font-size: 20px;
             background: transparent;
             color: #ffffff;
@@ -68,8 +82,14 @@
             width: 84px;
             height: 38px;
         }
+        .input-div .rightback{
+            margin-top: -42px;
+            float:right;
+            width: 16px;
+            height: 16px;
+        }
         .input-div button{
-            margin-top: 20px;
+            margin-top: 10px;
             font-size:18px;
             color:rgba(0,51,102,1);
             font-weight:600;
@@ -90,7 +110,7 @@
         .input-div a{
             color: rgba(255,255,255,1);
         }
-        /**iPhone4、5*/
+/**iPhone4、5*/
 @media screen and (max-width:330px) {
     .head-div .back{
         margin-top: 20px;
@@ -108,6 +128,9 @@
     }
     .input-div .code{
         margin-top: -55px;
+    }
+    .input-div .rightback{
+        margin-top: -32px;
     }
     .input-div button{
         height:30px;      
@@ -134,12 +157,23 @@
             <input type="text" maxlength="4" placeholder="请输入验证码" />
             <img src="../img/code.png" class="code" />
             <p>请选择经销商名称</p>
-            <input type="password" placeholder="请输入密码" />
+            <input type="text" placeholder="请选择经销商"  id="expressShow" readonly="readonly"/>
+            <img src="../img/rightback2.png" class="rightback" />
             <p>请选择岗位信息</p>
-            <input type="password" placeholder="请输入密码" />
+            <input type="text" placeholder="请选择岗位"  id="expressShow2" readonly="readonly"/>
+            <img src="../img/rightback2.png" class="rightback" />
             <button>注 册</button>
             <span>已有账户？<a href="../index.html">点击登录</a></span>
         </div>
     </div>
+    <!--选择弹层-->
+    <section id="showLayer" class="express-show-box">
+        <article id="showBox">
+            <ul id="showList" class="show-list"></ul>
+        </article>
+    </section>
+    <!--幕布-->
+    <div id="showMask" class="mask"></div>
+    <script src="../js/jquery.show.js"></script>
 </body>
 </html>
