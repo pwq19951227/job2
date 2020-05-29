@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>登录</title>
+    <title>注册</title>
     <style>
         *{
             margin: 0;
             padding: 0;
         }
         body{
-            background: url(img/background.png) no-repeat; 
+            background: url(../img/background.png) no-repeat; 
             background-size:100% 100%; 
             background-attachment:fixed;
         }
@@ -29,7 +29,7 @@
         }
         .body-div{
             color: #ffffff;
-            padding:55px 40px;
+            padding:30px 40px;
         }
         .body-div h3{
             font-size: 30px;
@@ -51,7 +51,7 @@
             width: 100%;
             margin-top: -5px;
             margin-bottom: 15px;
-            height: 50px;
+            height: 40px;
             font-size: 20px;
             background: transparent;
             color: #ffffff;
@@ -90,7 +90,8 @@
         .input-div a{
             color: rgba(255,255,255,1);
         }
-        @media screen and (max-width:330px) {
+        /**iPhone4、5*/
+@media screen and (max-width:330px) {
     .head-div .back{
         margin-top: 20px;
     }
@@ -117,12 +118,12 @@
 <body>
     <div class="head-div">
         <a href="javascript:void(0);" onclick="javascript:history.go(-1);">
-            <img class="back" src="img/leftback.png" />
+            <img class="back" src="../img/leftback.png" />
         </a>
-        <img class="logo" src="img/autoLogos.png" />
+        <img class="logo" src="../img/autoLogos.png" />
     </div>
     <div class="body-div">
-        <h3>欢迎您登录</h3>
+        <h3>注册</h3>
         <p class="title">内部存储系统</p>
         <div class="input-div">
             <p>手机号</p>
@@ -131,9 +132,13 @@
             <input type="password" placeholder="请输入密码" />
             <p>请输入验证码</p>
             <input type="text" maxlength="4" placeholder="请输入验证码" />
-            <img src="img/code.png" class="code" />
-            <button>登 录</button>
-            <span>还没有账号？<a href="html/register.html">去注册</a></span>
+            <img src="../img/code.png" class="code" />
+            <p>请选择经销商名称</p>
+            <input type="password" placeholder="请输入密码" />
+            <p>请选择岗位信息</p>
+            <input type="password" placeholder="请输入密码" />
+            <button>注 册</button>
+            <span>已有账户？<a href="../index.html">点击登录</a></span>
         </div>
     </div>
 </body>
