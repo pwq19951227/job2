@@ -15,7 +15,7 @@
         }
         a {text-decoration:none;-webkit-tap-highlight-color:rgba(255,255,255,0);-webkit-user-select:none;-moz-user-focus:none;-moz-user-select:none;}
         body{
-            background-color: #ffffff;
+            background-color: #fff;
         }
         .head-div{
             font-weight:600;
@@ -36,6 +36,109 @@
         .body-div{
             padding: 16px;
         }
+        .user-div{
+            display: flex;
+            align-items: center;
+        }
+        .img-div{
+            width: 45px;
+        }
+        .img-div img{
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+        }
+        .userInfo-div{
+            width: calc(100% - 45px);
+            text-align: left;
+            margin-left: 8px;
+            line-height: 25px;
+            margin-top: -5px;
+        }
+        .userInfo-div .title{
+            font-size: 18px;
+        }
+        .userInfo-div .desc{
+            font-size: 12px;
+            color: #999999;
+        }
+        .info-div{
+            margin-top: 22px;
+        }
+        .info-div .title{
+            font-size:18px;
+            font-weight:600;
+            color: #003366;
+            margin-bottom: 5px;
+        }
+        .info-div .desc{
+            font-size: 16px;
+            color: #333333;
+            padding-bottom: 11px;
+        }
+        .show{
+            margin-top: 16px;
+            background-color: #EBEBEB;
+            width: 100%;
+            height: 180px;
+        }
+        .show img{
+            margin-top: 16px;
+            width: 100%;
+            height: 24px;
+        }
+        .handrail{
+            background-color: #F7F7F7;
+            width: 100%;
+            height: 16px;
+        }
+        .comment-div{
+            padding: 16px;
+            padding-bottom: 70px;
+        }
+        .comment-div .comment-title{
+            font-size:18px;
+            font-weight:600;
+            color: #003366;
+            margin-bottom: 24px;
+        }
+        .comment-div .comment-desc{
+            font-size: 16px;
+            color: #333333;
+            padding-top: 16px;
+        }
+        .comment-div textarea{
+            margin-top: 16px;
+            font-size: 16px;
+            background-color: #F7F7F7;
+            width: calc(100% - 24px);
+            padding: 12px;
+            height: 60px;
+            outline: none;
+            resize:none;
+            border: 0;
+        }
+        .bottom-div{
+            width: 100%;
+            height: 50px;
+            font-size: 12px;
+            color: #003366;
+            box-shadow: 0 -2px 4px 0 rgba(0,0,0,0.07);
+            display: flex;
+            position:fixed;
+            bottom: 0;
+        }
+        .noPass{
+            width: 35%;
+            color: #999999;
+            border: 0;
+        }
+        .pass{
+            width: 65%;
+            color: #FFFFFF;
+            background-color: #00B1F1;
+            border: 0;
+        }
   </style>
 </head>
 <body>
@@ -44,7 +147,44 @@
         <img class="log" src="../img/autoLogo-dark.png" />
     </div>
     <div class="body-div">
-    
+        <div class="user-div">
+            <div class="img-div">
+                <img src="../img/head.jpg" />
+            </div>
+            <div class="userInfo-div">
+                <p class="title">张三</p>
+                <p class="desc">2019-10-23 20:45</p>
+            </div>
+        </div>
+        <div class="info-div">
+            <p class="title">简介：</p>
+            <P class="desc">简介在讲师端的首页可以看到 需要讲师审批的内容，审 批的内容按照内容分类进 行排列，在内容分类中按照上传时间的先后顺序呈现;</P>
+            <div class="show">
+                <img src="../img/autoLogos2.png" />
+            </div>
+            <div class="show">
+                <img src="../img/autoLogos2.png" />
+            </div>
+        </div>
+    </div>
+    <div class="handrail"></div>
+    <div class="comment-div">
+        <p class="comment-title">上次评论的内容</p>
+        <div class="user-div">
+            <div class="img-div">
+                <img src="../img/head.jpg" />
+            </div>
+            <div class="userInfo-div">
+                <p class="title">张三</p>
+                <p class="desc">2019-10-23 20:45</p>
+            </div>
+        </div>
+        <P class="comment-desc">评论内容在讲师端的首页可以看到 需要讲师审批的内容，审批的</P>
+        <textarea placeholder="请输入评论内容"></textarea>
+    </div>
+    <div class="bottom-div">
+        <button class="noPass">不通过</button>
+        <button class="pass">通过</button>
     </div>
 </body>
 </html>
