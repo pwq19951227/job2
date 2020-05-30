@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>分组 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="24" cy="24" r="24"></circle>
+        <filter x="-14.6%" y="-18.8%" width="129.2%" height="129.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="-2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="我的任务" transform="translate(-160.000000, -589.000000)" fill-rule="nonzero">
+            <g id="tab" transform="translate(0.000000, 589.000000)">
+                <g id="分组-5" transform="translate(160.000000, 0.000000)">
+                    <g id="分组-4" transform="translate(4.000000, 6.000000)">
+                        <g id="分组-3">
+                            <g id="分组-2">
+                                <g id="分组">
+                                    <g id="椭圆形">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                        <use fill="#FFFFFF" xlink:href="#path-1"></use>
+                                    </g>
+                                </g>
+                                <circle id="椭圆形" fill="#00B1F1" cx="24" cy="24" r="20"></circle>
+                            </g>
+                            <rect id="矩形" x="12" y="11" width="24" height="24"></rect>
+                        </g>
+                        <path d="M27,31.5 L27,28 C27,26.8954305 26.1045695,26 25,26 L23,26 C21.8954305,26 21,26.8954305 21,28 L21,31.5 L17.7913033,31.5 C16.5258514,31.5 15.5,30.4741486 15.5,29.2086967 L15.5,21.5612245 C15.5,20.8502079 15.8300807,20.1794787 16.3934546,19.7457109 L22.6021512,14.9653453 C23.4260865,14.3309591 24.5739135,14.3309591 25.3978488,14.9653453 L31.6065454,19.7457109 C32.1699193,20.1794787 32.5,20.8502079 32.5,21.5612245 L32.5,29.2086967 C32.5,30.4741486 31.4741486,31.5 30.2086967,31.5 L27,31.5 Z" id="合并形状" stroke="#001F50" stroke-width="1.14565167" stroke-linecap="square" stroke-linejoin="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

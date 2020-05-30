@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>分组 15</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="1.53088873%" x2="50%" y2="97.6430753%" id="linearGradient-1">
+            <stop stop-color="#FFCB69" offset="0%"></stop>
+            <stop stop-color="#FF8900" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="讲师端首页" transform="translate(-255.000000, -381.000000)" fill-rule="nonzero">
+            <g id="分组-6" transform="translate(195.000000, 359.000000)">
+                <g id="分组-16" transform="translate(60.000000, 22.000000)">
+                    <g id="分组-15">
+                        <circle id="椭圆形-copy" fill="url(#linearGradient-1)" cx="22" cy="22" r="22"></circle>
+                        <path d="M13.6189802,31.6085684 C13.1050016,31.0535479 13,30.7809691 13,30.1432334 C13,27.3345065 17.2342567,25.0579359 22.4576464,25.0579359 C27.6808155,25.0579359 32,27.3345065 32,30.1432334 C32,30.7809691 31.7626434,31.5222668 31.1266776,31.7809476 C30.4902707,32.0394043 14.1329587,32.1633649 13.6189802,31.6085684 Z M22.4941323,12 C25.3907212,12 27.4534737,15.0436468 27.2022198,18.2708807 C26.961775,21.3551004 24.8174036,23.4637751 22.4941323,23.4637751 C20.170861,23.4637751 18.0264896,21.3551004 17.7862653,18.2708807 C17.5347908,15.0436468 19.5975433,12 22.4941323,12 Z" id="形状" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

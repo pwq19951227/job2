@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>设置</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="设置" transform="translate(-16.000000, -254.000000)" fill-rule="nonzero">
+            <g id="分组" transform="translate(16.000000, 254.000000)">
+                <rect id="Rectangle" stroke="#003366" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" x="4.25" y="8.25" width="15.5" height="11.5" rx="2"></rect>
+                <path d="M9.89746018,2.69021463 L13.8974602,2.69021463 C15.4162432,2.69021463 16.6474602,3.92143157 16.6474602,5.44021463 L16.6474602,8.19021463 L7.14746018,8.19021463 L7.14746018,5.44021463 C7.14746018,3.92143157 8.37867712,2.69021463 9.89746018,2.69021463 Z" id="Rectangle" stroke="#003366" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <rect id="Rectangle" fill="#003366" x="11.2701724" y="11.9675373" width="1.5" height="4" rx="0.75"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
