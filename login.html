@@ -8,6 +8,9 @@
     <script>
         $(function(){
             $(".head-div").slideDown(1000);
+            $("#login").click(function(){
+                window.location.href="html/index.html";
+            });
         });
     </script>
     <style>
@@ -153,7 +156,7 @@
             <p>请输入验证码</p>
             <input type="text" maxlength="4" placeholder="请输入验证码" />
             <img src="img/code.png" class="code" />
-            <button>登 录</button>
+            <button id="login">登 录</button>
             <span>还没有账号？<a href="html/register.html">去注册</a></span>
         </div>
     </div>

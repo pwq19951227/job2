@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>我的</title>
+    <script>
+        function transfer(tag){
+            switch(tag){
+                case 1:
+                    window.location.href="myTask.html";
+                break;
+                case 2:
+                    window.location.href="home.html";
+                break;
+                case 3:
+                    window.location.href="myCenter.html";
+                break;
+            }
+        }
+    </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #ffffff;
+        }
+        .log{
+            width: 100%;
+        }
+        .head-div{
+            padding-top: 44px;
+            background: url(../img/background-small.png) no-repeat; 
+            background-repeat: round;
+            background-size: cover;
+            width: 100%;
+            height: 25vh;
+        }
+        .user-div{
+            margin-top: 17px;
+            padding: 15px 28px;
+            display: flex;
+            align-items: center;
+        }
+        .img-div{
+            width: 68px;
+        }
+        .img-div img{
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+        }
+        .info-div{
+            width: calc(100% - 68px);
+            text-align: left;
+            margin-left: 16px;
+            line-height: 30px;
+        }
+        .title{
+            font-size: 17px;
+            color: #ffffff;
+        }
+        .desc{
+            font-size: 14px;
+            color: rgba(255,255,255,0.50);
+        }
+        .funcation-div p{
+            line-height: 60px;
+            padding: 0 16px;
+            display: flex;
+            align-items: center;
+            border-bottom: 0.5px solid #f2f2f2;
+        }
+        .funcation-div span{
+            margin-left: 8px;
+        }
+        .funcation-div .button-div{
+            margin-top: 46px;
+            text-align:center;
+        }
+        .funcation-div button{
+            font-size: 16px;
+            width: 80%;
+            height: 48px;
+            margin: auto;
+            background: #FFFFFF;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.08);
+            border-radius: 24px;
+            border: 0;
+        }
+        .right{
+            position: absolute;
+            right: 16px;
+        }
+        .bottom-div{
+            width: 100%;
+            height: 50px;
+            font-size: 12px;
+            color: #003366;
+            box-shadow: 0 -2px 4px 0 rgba(0,0,0,0.07);
+            display: flex;
+            position:fixed;
+            bottom: 0;
+        }
+        .bottom-div span{
+            text-align: center;
+            width: 33%;
+        }
+        .bottom-div .min{
+            margin-top: 5px;
+            margin-bottom: -3px;
+        }
+        .bottom-div .max{
+            margin-top: -25px;
+            margin-bottom: -5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="head-div">
+        <img class="log" src="../img/autoLogo-center.png" />
+        <div class="user-div">
+            <div class="img-div">
+                <img src="../img/head.jpg" />
+            </div>
+            <div class="info-div">
+                <p class="title">完美的都是假象</p>
+                <p class="desc">All user groups</p>
+            </div>
+        </div>
+    </div>
+    <div class="funcation-div">
+        <p><img src="../img/lock.png" /><span>修改密码</span><img class="right" src="../img/rightback3.png" /></p>
+        <p><img src="../img/smiling.png" /><span>关于</span><img class="right" src="../img/rightback3.png" /></p>
+        <div class="button-div">
+            <button>退出登录</button>
+        </div>
+    </div>
+    <div class="bottom-div">
+        <span onclick="transfer(1)"><img class="min" src="../img/task.png" /><br>任务</span>
+        <span onclick="transfer(2)"><img class="max" src="../img/home.png" /><br>首页</span>
+        <span onclick="transfer(3)"><img class="min" src="../img/my-click.png" /><br>我的</span>
+    </div>
+</body>
+</html>
