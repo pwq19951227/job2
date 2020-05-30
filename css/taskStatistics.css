@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+}
+a {text-decoration:none;-webkit-tap-highlight-color:rgba(255,255,255,0);-webkit-user-select:none;-moz-user-focus:none;-moz-user-select:none;}
+body{
+    background-color: #ffffff;
+}
+.head-div{
+    font-weight:600;
+    font-size: 20px;
+    color: #003366;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+}
+.leftback{
+    position: absolute;
+    left: 16px;
+}
+.log{
+    margin-top: 13px;
+    width: 100%;
+}
+.body-div{
+    padding: 16px;
+}
+.center-div {
+    font-size:12px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.input-div{
+    padding-left: 5px;
+    width: 80%;
+    height: 36px;
+    background-color: #F7F7F7;
+    border-radius:4px;
+    display: flex;
+    align-items: center;
+}
+.input-div input{
+    outline: none;
+    background-color: #F7F7F7;
+    border: 0;
+}
+.select-div{
+    width: 83px;
+    margin-left: 5%;
+}
+.select-div select{
+    text-indent: 5px;
+    width: 100%;
+    height: 36px;
+    background-color: #F7F7F7;
+    border-radius:4px;
+    border: 0;
+}
+.list-div{
+    height: calc(100vh - 180px);
+    overflow: auto;
+    padding: 0 2px;
+}
+.item{
+    margin-top: 10px;
+    height: 16vw;
+    padding: 16px;
+    padding-bottom: 20px;
+    box-shadow:0px 2px 6px 0px rgba(0,0,0,0.08);
+    border-radius:8px;
+    display: flex;
+    align-items: center;
+}
+.img-div img{
+    width: 76px;
+    height: 76px;
+    margin-right: 10px;
+}
+.desc-div{
+    width: 70%;
+}
+.desc-div p{
+    line-height: 28px;
+}
+.desc-div button{
+    float:right;
+    width:70px;
+    height:24px;
+    border: 0;
+    color: #ffffff;
+    background:rgba(1,176,240,1);
+    border-radius:15px;
+}
+.color1{
+    color: #FFFFFF;
+    background-color: #01B0F0;
+}
+.color2{
+    color: #999999;
+    background-color: #ffffff;
+    border:1px solid rgba(230,230,230,1) !important;
+}
+.title{
+    font-size:16px;
+    font-weight:600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tag span{
+    padding:0 5px;
+    width:28px;
+    height:14px;
+    border-radius:2px;
+    font-size: 10px;
+}
+.span-color1{
+    color: #00B1F1;
+    background-color: #DEF5FE;
+}
+.span-color2{
+    color: #02AF1D;
+    background-color: #E2FFEE;
+}
+.time{
+    color: #999999;
+    font-size: 12px;
+}

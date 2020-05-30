@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>讲师端首页</title>
+    <link rel="stylesheet" href="../css/index.css" />
     <script>
         function transfer(tag){
             switch(tag){
@@ -17,93 +18,11 @@
                     window.location.href="taskStatistics.html";
                 break;
                 case 4:
-                    window.location.href="";
+                    window.location.href="myCenter.html";
                 break;
             }
         }
     </script>
-    <style>
-        *{
-            margin: 0;
-        }
-        body{
-            height: 100vh;
-            background-color: #F7F7F7;
-            background-image: url(../img/Fill2.png);
-            background-repeat: no-repeat;
-            background-position-y: calc(100vh - 173px) ;
-            background-position-x: calc(100vw - 178px);
-        }
-        .head-div{
-            font-weight:600;
-            font-size: 20px;
-            color: #003366;
-            text-align: center;
-            width: 100%;
-            padding-top: 10px;
-            background-color: #ffffff;
-        }
-        .log{
-            margin-top: 13px;
-            width: 100%;
-        }
-        .user-div{
-            padding: 15px 28px;
-            display: flex;
-            align-items: center;
-        }
-        .img-div{
-            width: 68px;
-        }
-        .img-div img{
-            width: 68px;
-            height: 68px;
-            border-radius: 50%;
-        }
-        .info-div{
-            width: calc(100% - 68px);
-            text-align: left;
-            margin-left: 16px;
-            line-height: 30px;
-        }
-        .title{
-            font-size: 17px;
-            color: #333333;
-        }
-        .desc{
-            font-size: 14px;
-            color: rgba(102,102,102,0.50);
-            font-weight: 500;
-        }
-        .function-div{
-            margin-top: 25px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .function-div img{
-            margin-top: 20px;
-        }
-        .function-div div{
-            font-size: 14px;
-            color: #003366;
-            background: #FFFFFF;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.08);
-            border-radius: 3px;
-            width: 44%;
-            height: 120px;
-            text-align: center;
-            margin-right: 4%;
-        }
-        .function-div div:last-child{
-            margin-right: 0;
-        }
-        .bottom-img{
-            position:absolute;
-            bottom: 0;
-            right: 0;
-        }
-    </style>
 </head>
 <body>
     <div class="head-div">
