@@ -6,6 +6,11 @@
     <title>任务创建</title>
     <link rel="stylesheet" href="../css/style.css" />
     <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script>
+        function submit(){
+            window.location.href="upload.html";
+        }
+    </script>
     <style>
         *{
             margin: 0;
@@ -101,7 +106,7 @@
             <textarea placeholder="请输入任务详情"></textarea>
         </p>
         <div class="button-div">
-            <button>确认上传</button>
+            <button onclick="submit()">确认上传</button>
         </div>
     </div>
     <!--选择弹层-->

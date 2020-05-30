@@ -3,7 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>上传文件</title>
+    <title>任务创建</title>
+    <script>
+        function submit(){
+            
+        }
+    </script>
     <style>
         *{
             margin: 0;
@@ -31,15 +36,109 @@
         .body-div{
             padding: 16px;
         }
+        .centent-div{
+            width: 100%;
+        }
+        .centent-div  textarea{
+            margin-top: 19px;
+            font-size: 15px;
+            width: 100%;
+            height: 200px;
+            outline: none;
+            resize:none;
+            border: 0;
+        }
+        .centent-div .title{
+            font-size:16px;
+            color: #333333;
+        }
+        .centent-div .title span{
+            color: #003366;
+            font-weight:600;
+        }
+        .file-div{
+            display: flex;
+            align-items: center;
+        }
+        .file{
+            text-align: center;
+            font-size:12px;
+            color: #003366;
+            width: 75px;
+            height: 75px;
+            border-radius:4px;
+            border:1px dashed rgba(151,151,151,1);
+        }
+        .file img{
+            margin-top: 15px;
+        }
+        .desc{
+            margin-left: 2%;
+            width: 75%;
+        }
+        .desc .title{
+            margin-top: -5px;
+            font-size: 16px;
+            color: #666666;
+        }
+        .desc .info{
+            margin-top: 20px;
+            font-size: 12px;
+            color: #999999;
+        }
+        .button-div{
+            margin-top: 78px;
+            text-align: center;
+        }
+        .button-div button{
+            font-size:18px;
+            color: #ffffff;
+            width: 80%;
+            height: 48px;
+            background:rgba(0,177,241,1);
+            box-shadow:0px 4px 8px 0px rgba(42,158,255,0.12);
+            border-radius:24px;
+            border: 0;
+        }
+        #fileUpload{
+            opacity:0;
+            width: 75px;
+            height: 75px;
+            position: absolute;
+            margin-left: -25px;
+        }
+                /**iPhone4、5*/
+@media screen and (max-width:330px) {
+    .centent-div textarea{
+        height: 150px;
+    }
+}
     </style>
 </head>
 <body>
     <div class="head-div">
-        <p><a href="index.html" class="leftback"><img src="../img/leftback2.png"/></a>任务统计</p>
+        <p><a href="createdTask.html" class="leftback"><img src="../img/leftback2.png"/></a>任务创建</p>
         <img class="log" src="../img/autoLogo-dark.png" />
     </div>
     <div class="body-div">
-
+        <div class="centent-div">
+            <p class="title"><span>标题：</span>12月13日作业上传</p>
+            <textarea placeholder="请输入简介...."></textarea>
+        </div>
+        <div class="file-div">
+            <div class="file">
+                <input type="file" id="fileUpload"/>
+                <img src="../img/file.png" /><br>
+                上传文件
+            </div>
+            <div class="desc">
+                <p class="title">可添加的文件类型：</p>
+                <p class="info">包括 照片、视频、录音和文件， 其中文件包括word、PPT、 excel和PDF</p>
+            </div>
+        </div>
+        <div class="button-div">
+            <button onclick="submit()">确认上传</button>
+        </div>
     </div>
 </body>
 </html>
