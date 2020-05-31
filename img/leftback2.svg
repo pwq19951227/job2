@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>大標題返回</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="创建任务" transform="translate(-16.000000, -31.000000)" fill-rule="nonzero">
+            <g id="搜索-copy-5" transform="translate(28.000000, 43.000000) scale(-1, 1) translate(-28.000000, -43.000000) translate(16.000000, 31.000000)">
+                <g id="Group">
+                    <g id="Group-5">
+                        <g id="Group-2">
+                            <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                            <path d="M5.1746212,7.6746212 L5.1746212,17.1746212 C5.1746212,17.726906 4.72690595,18.1746212 4.1746212,18.1746212 C3.62233645,18.1746212 3.1746212,17.726906 3.1746212,17.1746212 L3.1746212,7.39875913 C3.1746212,6.44654405 3.94654405,5.6746212 4.89875913,5.6746212 L14.6746212,5.6746212 C15.226906,5.6746212 15.6746212,6.12233645 15.6746212,6.6746212 C15.6746212,7.22690595 15.226906,7.6746212 14.6746212,7.6746212 L5.1746212,7.6746212 Z" id="Path" fill="#003366" transform="translate(9.424621, 11.924621) rotate(-225.000000) translate(-9.424621, -11.924621) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
