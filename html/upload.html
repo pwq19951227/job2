@@ -5,9 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>任务创建</title>
     <link rel="stylesheet" href="../css/upload.css" />
+    <link rel="stylesheet" href="../css/dialog.css" />
+    <script src="../js/jquery.min.js"></script>
     <script>
+        $(function(){
+            $("div.background").hide();
+            $("div.dialog-div").hide();
+        })
         function submit(){
-            
+            showDialog("上传成功");
+        }
+        //隐藏弹层
+        function hideDialog() {
+            $("div.background").hide();
+            $("div.dialog-div").hide();
+        }
+
+		//显示弹层
+        function showDialog(text) {
+			$("p.alert-info").html(text);
+
+            $("div.background").show();
+            $("div.dialog-div").show();
         }
     </script>
 </head>
@@ -36,5 +55,17 @@
             <button onclick="submit()">确认上传</button>
         </div>
     </div>
+    <div class="background"></div>
+	<div class="dialog-div" onclick="hideDialog()">
+		<div class="dialog">
+			<div class="top">
+				<p class="title">提示</p>
+				<p class="alert-info"></p>
+			</div>
+			<div class="bottom">
+				<button class="left-button" onclick="hideDialog()">确定</button>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
