@@ -20,6 +20,9 @@
                 case 4:
                     window.location.href="../login.html";
                 break;
+                case 5:
+                    window.location.href="updateInfo.html";
+                break;
             }
         }
     </script>
@@ -38,7 +41,7 @@
         </div>
     </div>
     <div class="funcation-div">
-        <p><img src="../img/lock.svg" /><span>修改密码</span><img class="right" src="../img/rightback3.svg" /></p>
+        <p onclick="transfer(5)"><img src="../img/lock.svg" /><span>修改密码</span><img class="right" src="../img/rightback3.svg" /></p>
         <p><img src="../img/smiling.svg" /><span>关于</span><img class="right" src="../img/rightback3.svg" /></p>
         <div class="button-div">
             <button onclick="transfer(4)">退出登录</button>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>修改信息</title>
+    <link rel="stylesheet" href="../css/updateInfo.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dialog.css" />
+    <script src="../js/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("div.background").hide();
+            $("div.dialog-div").hide();
+        })
+        function submit(){
+            showDialog(2);
+        }
+
+        //隐藏弹层
+        function hideDialog() {
+            $("div.background").hide();
+            $("div.dialog-div").hide();
+        }
+
+		//显示弹层
+        function showDialog(tag) {
+            if(tag==1){
+                $("p.title").html("新密码");
+                $("#newPwd").show();
+                $("p.alert-info").hide()
+            }else{
+                $("#newPwd").hide();
+                $("p.alert-info").show();
+                $("p.title").html("提示");
+                $("p.alert-info").html("修改完成");
+            }
+            $("div.background").show();
+            $("div.dialog-div").show();
+        }
+    </script>
+</head>
+<body>
+    <div class="head-div">
+        <p><a href="myCenter.html" class="leftback"><img src="../img/leftback2.svg"/></a>修改信息</p>
+        <img class="log" src="../img/autoLogo-dark.svg" />
+    </div>
+    <div class="body-div">
+        <input type="file" id="fileUpload" accept="image/*" />
+        <p class="max-p">头像<img class="head-img" src="../img/head.jpg" /><img src="../img/rightback3.svg" class="rightback" /></p>
+        <p onclick="showDialog(1)">修改密码<input type="password" placeholder="请输入新密码" /><img src="../img/rightback3.svg" class="rightback" /></p>
+        <p>修改经销商<input type="text" placeholder="请选择" class="min-input"  id="expressShow" readonly="readonly"/><img src="../img/rightback3.svg" class="rightback" /></p>
+        <div class="button-div">
+            <button onclick="submit()">完成</button>
+        </div>
+    </div>
+
+    <!--修改密码-->
+    <div class="background" onclick="hideDialog()"></div>
+	<div class="dialog-div">
+		<div class="dialog">
+			<div class="top">
+                <p class="title">新密码</p>
+                <p class="alert-info"></p>
+                <input type="password" id="newPwd" />
+			</div>
+			<div class="bottom">
+				<button class="left-button" onclick="hideDialog()">确定</button>
+			</div>
+		</div>
+    </div>
+    
+    <!--选择弹层-->
+    <section id="showLayer" class="express-show-box">
+        <article id="showBox">
+            <ul id="showList" class="show-list"></ul>
+        </article>
+    </section>
+    <!--幕布-->
+    <div id="showMask" class="mask"></div>
+    <script src="../js/jquery.show.js"></script>
+</body>
+</html>
