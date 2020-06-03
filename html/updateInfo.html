@@ -48,8 +48,11 @@
     <div class="body-div">
         <input type="file" id="fileUpload" accept="image/*" />
         <p class="max-p">头像<img class="head-img" src="../img/head.jpg" /><img src="../img/rightback3.svg" class="rightback" /></p>
-        <p onclick="showDialog(1)">修改密码<input type="password" placeholder="请输入新密码" /><img src="../img/rightback3.svg" class="rightback" /></p>
+        <p>修改密码<input type="password" placeholder="请输入新密码" />
+            <!-- <img src="../img/rightback3.svg" class="rightback" /> -->
+        </p>
         <p>修改经销商<input type="text" placeholder="请选择" class="min-input"  id="expressShow" readonly="readonly"/><img src="../img/rightback3.svg" class="rightback" /></p>
+        <p>个人说明<input type="text" placeholder="用一句话介绍自己吧" /></p>
         <div class="button-div">
             <button onclick="submit()">完成</button>
         </div>
@@ -60,9 +63,9 @@
 	<div class="dialog-div">
 		<div class="dialog">
 			<div class="top">
-                <p class="title">新密码</p>
+                <p class="title">提示</p>
                 <p class="alert-info"></p>
-                <input type="password" id="newPwd" />
+                <input type="password" id="newPwd" placeholder="请输入新密码"/>
 			</div>
 			<div class="bottom">
 				<button class="left-button" onclick="hideDialog()">确定</button>
