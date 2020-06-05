@@ -28,6 +28,9 @@
             $("div.background").show();
             $("div.dialog-div").show();
         }
+        function download(){
+            showDialog("下载完成");
+        }
     </script>
 </head>
 <body>
@@ -40,6 +43,11 @@
             <p class="title"><span>标题：</span>12月13日作业上传</p>
             <textarea placeholder="请输入简介...."></textarea>
         </div>
+        <a href="javascript:download();">
+            <div class="down">
+                <img src="../img/file.svg" /><br>附件下载
+            </div>
+        </a>
         <div class="file-div">
             <div class="file">
                 <input type="file" id="fileUpload"/>
